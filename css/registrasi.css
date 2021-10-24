@@ -1,0 +1,73 @@
+body{
+	font-size: 15px;
+	font-family: sans-serif;
+	background: grey;
+}
+
+h2{
+	font-family: sans-serif;
+	font-size: 22px;
+	color:white;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 25px;
+}
+
+.daftarbox{
+	width: 500px;
+	height: 520px;
+	background: black;
+	color: white;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	opacity: 90%;
+}
+
+.daftarbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.daftarbox input{
+	width: 120%;
+	margin-bottom: 20px;
+}
+
+.daftarbox input[type="text"], input[type="email"], input[type="password"], textarea
+{
+	border: none;
+	border-bottom: 1px solid white;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: white;
+	font-size: 16px;
+}
+
+.daftarbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: blue;
+	color: white;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.daftarbox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: yellow;
+	color: black;
+}
+
+div form{
+	margin: -30px 80px 0px -3px;
+	padding: 20px;
+	padding-top: -500px;
+}
+
