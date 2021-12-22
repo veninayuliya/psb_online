@@ -1,8 +1,8 @@
 <?php
-$server = "172.20.0.2";
-$username = "root";
-$password = "";
-$database = "psb_online";
+define('DB_SERVER','172.20.0.2');
+define('DB_USER','root');
+define('DB_PASS','admin');
+define('DB_NAME','psb_online');
 
-$db = mysqli_connect($server, $username, $password, $database);
+$db = mysqli_connect(DB_SERVER,DB_USER,DB_PASS,DB_NAME);
 ?>

@@ -1,7 +1,7 @@
 version: '3.8'
 services:
-  php-apache-environment:
-    image: 123vnina/kuis2
+  app:
+    image: 123vnina/cobadocker2
     container_name: php-apache
     depends_on:
       - db
@@ -26,6 +26,7 @@ services:
       - ./psb_online.sql:/docker-entrypoint-initdb.d/psb_online.sql
     network:
       - backend
+      
 volumes:
   db:
 
