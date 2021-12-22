@@ -16,7 +16,7 @@ services:
     container_name: db
     image: mysql
     restart: always
-    environments:
+    environment:
       MYSQL_ROOT_PASSWORD: admin
       MYSQL_DATABASE: psb_online
     ports:
@@ -26,7 +26,7 @@ services:
       - ./psb_online.sql:/docker-entrypoint-initdb.d/psb_online.sql
     network:
       - backend
-      
+
 volumes:
   db:
 
